@@ -114,5 +114,19 @@ export function getCityOptions() {
   for (let i = 0; i < 30; i++) {
     cityOptions.push(Mock.Random.city());
   }
-  return cityOptions
+  return cityOptions;
+}
+export function getNameOptions() {
+  let cityOptions = [];
+  for (let i = 0; i < 50; i++) {
+    cityOptions.push(Mock.Random.ctitle());
+  }
+  return cityOptions;
+}
+export function getImageOptions() {
+  let cityOptions = [];
+  for (let i = 0; i < 50; i++) {
+    cityOptions.push(Mock.Random.dataImage());
+  }
+  return cityOptions;
 }
